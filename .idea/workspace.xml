@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="Project was created">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oyvindh/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/app.java" afterDir="false" />
     </list>
@@ -39,7 +38,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/oyvin/OneDrive/Dokumenter/GitHub/rng"
   }
 }]]></component>
   <component name="RunManager">
@@ -71,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653483387064</updated>
       <workItem from="1653483389884" duration="3205000" />
+      <workItem from="1653920560808" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="Project was created">
       <created>1653483525795</created>
