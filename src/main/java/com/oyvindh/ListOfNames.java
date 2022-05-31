@@ -13,7 +13,6 @@ public class ListOfNames {
         System.out.println("How many names do you wanna add: ");
         String howManyNames = s.nextLine();
         int howManyNamesInt = Integer.parseInt(howManyNames);
-        //names.remove(0);
         for (int i = 0; i < howManyNamesInt; i++) {
             System.out.println("Enter new name: ");
             String newName = s.nextLine();

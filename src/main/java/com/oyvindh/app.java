@@ -24,7 +24,6 @@ public class app extends JFrame {
             panel.add(generate);
             panel.add(name);
             name.setHorizontalAlignment(SwingConstants.CENTER);
-            System.out.println();
             generate.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
