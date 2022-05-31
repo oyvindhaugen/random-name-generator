@@ -4,15 +4,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 public class app extends JFrame {
     static JFrame frame;
     static JButton generate;
     static JLabel name;
+    private static ListOfNames listOfNames;
 
     public static void main(String[] args) {
         {
-
+            listOfNames = new ListOfNames();
+            listOfNames.ListOfNames();
             frame = new JFrame("Random Name Generator");
             generate = new JButton("Click");
             name = new JLabel();
@@ -25,13 +28,13 @@ public class app extends JFrame {
             generate.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    //System.out.println(names);
-//                Random r = new Random();
-//
-//                int randomItem = r.nextInt(names.size());
-//                String randomElement = list.get(randomItem);
-//                name.setText(randomElement);
-//                list.remove(0);
+                    System.out.println(listOfNames.names);
+                    Random r = new Random();
+
+                    int randomItem = r.nextInt(listOfNames.names.size());
+                    String randomElement = listOfNames.names.get(randomItem);
+                    name.setText(randomElement);
+                    listOfNames.names.remove(randomItem);
                 }
             });
 
@@ -40,7 +43,6 @@ public class app extends JFrame {
             frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
             frame.setLocationRelativeTo(null);
             frame.setSize(500, 500);
-
-
         }
-    }}
+    }
+}

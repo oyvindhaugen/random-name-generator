@@ -5,9 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ListOfNames {
+
+    List<String> names = new ArrayList<>();
+
     void ListOfNames() {
         Scanner s = new Scanner(System.in);
-        List<String> names = new ArrayList<>();
         System.out.println("How many names do you wanna add: ");
         String howManyNames = s.nextLine();
         int howManyNamesInt = Integer.parseInt(howManyNames);
@@ -19,6 +21,5 @@ public class ListOfNames {
             System.out.println(names);
         }
         System.out.println("This is the complete list: " + names);
-        names = new ArrayList<>();
     }
 }
