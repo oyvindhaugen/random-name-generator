@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="Added reset, added txt functionality, added menu">
+    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="moved the txt file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oyvindh/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/readFile.java" afterDir="false" />
     </list>
@@ -50,6 +50,11 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oyvin\IdeaProjects\random-name-generator\" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.app">
     <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.oyvindh.app" />
@@ -106,8 +111,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.app" />
-        <item itemvalue="Application.test" />
         <item itemvalue="Application.readFile" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.writeFile" />
       </list>
     </recent_temporary>
@@ -150,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654071461568</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="moved the txt file">
+      <created>1654080615863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654080615863</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +184,7 @@
     <MESSAGE value="Added list code, fixed button" />
     <MESSAGE value="added" />
     <MESSAGE value="Added reset, added txt functionality, added menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reset, added txt functionality, added menu" />
+    <MESSAGE value="moved the txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved the txt file" />
   </component>
 </project>

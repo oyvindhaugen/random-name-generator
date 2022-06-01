@@ -1,8 +1,6 @@
 package com.oyvindh;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
 
 public class readFile {
@@ -10,7 +8,7 @@ public class readFile {
 
     void readFileToList() {
         try {
-            File f = new File("C:/Users/oyvin/IdeaProjects/random-name-generator/src/main/java/com/oyvindh/Test.txt");
+            File f = new File("Test.txt");
             BufferedReader br = new BufferedReader(new FileReader(f));
             String line = br.readLine();
             while (line != null) {
