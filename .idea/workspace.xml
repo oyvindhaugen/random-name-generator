@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="moved the txt file">
+    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="moved txt file so it works&#10;&#10;if txt file and .jar file is in same dir it will work">
+      <change afterPath="$PROJECT_DIR$/Test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oyvindh/readFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/readFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654080615863</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="moved txt file so it works&#10;&#10;if txt file and .jar file is in same dir it will work">
+      <created>1654112127224</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654112127224</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +192,7 @@
     <MESSAGE value="added" />
     <MESSAGE value="Added reset, added txt functionality, added menu" />
     <MESSAGE value="moved the txt file" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved the txt file" />
+    <MESSAGE value="moved txt file so it works&#10;&#10;if txt file and .jar file is in same dir it will work" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved txt file so it works&#10;&#10;if txt file and .jar file is in same dir it will work" />
   </component>
 </project>
