@@ -10,7 +10,7 @@ public class readFile {
 
     void readFileToList() {
         try {
-            File f = new File("C:/Java/Test.txt");
+            File f = new File("C:/Users/oyvin/IdeaProjects/random-name-generator/src/main/java/com/oyvindh/Test.txt");
             BufferedReader br = new BufferedReader(new FileReader(f));
             String line = br.readLine();
             while (line != null) {
