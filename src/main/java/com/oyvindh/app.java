@@ -123,16 +123,17 @@ public class app extends JFrame {
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
         int result = fileChooser.showOpenDialog(frame);
         if (result == JFileChooser.APPROVE_OPTION) {
-            File selectedFile = fileChooser.getSelectedFile();
+            selectedFile = fileChooser.getSelectedFile();
             System.out.println("Selected file: " + selectedFile.getAbsolutePath());
             try {
-                File f = new File(String.valueOf(selectedFile));
+                File f = new File(selectedFile.getAbsolutePath());
                 BufferedReader br = new BufferedReader(new FileReader(f));
                 String line = br.readLine();
                 while (line != null) {
                     listOfLinesOpened.add(line);
                     line = br.readLine();
                 }
+                System.out.println(listOfLinesOpened);
                 br.close();
             } catch (Exception e) {
                 e.printStackTrace();
