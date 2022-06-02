@@ -4,7 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -15,7 +17,13 @@ public class app extends JFrame {
     static JLabel count;
     static JMenu menu;
     static JMenuItem reset;
+    static JMenuItem pickFile;
     private static readFile readFile;
+    private static FileChooser fc;
+    private static boolean isPicked;
+    ArrayList<String> listOfLinesOpened = new ArrayList();
+    File selectedFile = new File("");
+
 
     public static void main(String[] args) {
         {
@@ -23,10 +31,13 @@ public class app extends JFrame {
             readFile.readFileToList();
             frame = new JFrame("Random Name Generator");
 
+            ImageIcon img = new ImageIcon("C:/Users/oyvin/IdeaProjects/random-name-generator/src/main/java/com/oyvindh/Icon.png");
             JMenuBar mb = new JMenuBar();
             menu = new JMenu("Menu");
             reset = new JMenuItem("Reset");
+            pickFile = new JMenuItem("Open file");
             menu.add(reset);
+            menu.add(pickFile);
             generate = new JButton("Click");
             name = new JLabel();
             count = new JLabel();
@@ -39,7 +50,11 @@ public class app extends JFrame {
             generate.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    new app().randomLogic();
+                    if (isPicked == false) {
+                        new app().randomLogic();
+                    } else {
+                        new app().randomLogicOpened();
+                    }
                 }
             });
             reset.addActionListener(new ActionListener() {
@@ -48,6 +63,14 @@ public class app extends JFrame {
                     new app().reset();
                 }
             });
+            pickFile.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    new app().readFileOpened();
+                    isPicked = true;
+                }
+            });
+            frame.setIconImage(img.getImage());
             mb.add(menu);
             frame.setJMenuBar(mb);
             frame.add(panel);
@@ -92,6 +115,46 @@ public class app extends JFrame {
             System.exit(0);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    private void readFileOpened() {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+        int result = fileChooser.showOpenDialog(frame);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+            try {
+                File f = new File(String.valueOf(selectedFile));
+                BufferedReader br = new BufferedReader(new FileReader(f));
+                String line = br.readLine();
+                while (line != null) {
+                    listOfLinesOpened.add(line);
+                    line = br.readLine();
+                }
+                br.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void randomLogicOpened() {
+        int amountLeft = listOfLinesOpened.size();
+        String amountLeftInt = String.valueOf(amountLeft);
+        count.setText(amountLeftInt);
+        count.setHorizontalAlignment(SwingConstants.CENTER);
+
+        Random r = new Random();
+        if (listOfLinesOpened.size() < 1) {
+            JOptionPane.showMessageDialog(null, "The list is empty");
+        } else {
+            int randomItem = r.nextInt(listOfLinesOpened.size());
+            String randomElement = listOfLinesOpened.get(randomItem);
+            name.setText(randomElement);
+            listOfLinesOpened.remove(randomItem);
+
         }
     }
 }
