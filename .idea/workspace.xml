@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="pp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/FileChooser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/Icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oyvindh/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/app.java" afterDir="false" />
-    </list>
+    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="can now choose file, but file isn't remembered" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654114653009</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="can now choose file, but file isn't remembered">
+      <created>1654159231089</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654159231089</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +219,8 @@
     <MESSAGE value="moved the txt file" />
     <MESSAGE value="moved txt file so it works&#10;&#10;if txt file and .jar file is in same dir it will work" />
     <MESSAGE value="pp" />
-    <option name="LAST_COMMIT_MESSAGE" value="pp" />
+    <MESSAGE value="can now choose file, but file isn't remembered" />
+    <option name="LAST_COMMIT_MESSAGE" value="can now choose file, but file isn't remembered" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
