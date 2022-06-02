@@ -3,11 +3,12 @@ package com.oyvindh;
 import java.io.*;
 import java.util.ArrayList;
 
-public class readFile {
+public class ReadFile {
     ArrayList<String> listOfLines = new ArrayList();
 
     void readFileToList() {
         try {
+            listOfLines.clear();
             File f = new File("Test.txt");
             BufferedReader br = new BufferedReader(new FileReader(f));
             String line = br.readLine();

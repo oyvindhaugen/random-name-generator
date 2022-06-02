@@ -10,7 +10,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class app extends JFrame {
+public class App extends JFrame {
     static JFrame frame;
     static JButton generate;
     static JLabel name;
@@ -18,16 +18,16 @@ public class app extends JFrame {
     static JMenu menu;
     static JMenuItem reset;
     static JMenuItem pickFile;
-    private static readFile readFile;
-    private static FileChooser fc;
+    private static ReadFile readFile;
     private static boolean isPicked;
     ArrayList<String> listOfLinesOpened = new ArrayList();
     File selectedFile = new File("");
 
+    public static final App myApplication = new App();
 
     public static void main(String[] args) {
         {
-            readFile = new readFile();
+            readFile = new ReadFile();
             readFile.readFileToList();
             frame = new JFrame("Random Name Generator");
 
@@ -50,23 +50,23 @@ public class app extends JFrame {
             generate.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if (isPicked == false) {
-                        new app().randomLogic();
+                    if (isPicked) {
+                        myApplication.randomLogicOpened();
                     } else {
-                        new app().randomLogicOpened();
+                        myApplication.randomLogic();
                     }
                 }
             });
             reset.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    new app().reset();
+                    myApplication.reset();
                 }
             });
             pickFile.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    new app().readFileOpened();
+                    myApplication.readFileOpened();
                     isPicked = true;
                 }
             });
@@ -99,6 +99,12 @@ public class app extends JFrame {
     }
 
     private void reset() {
+        isPicked = false;
+        readFile.readFileToList();
+        count.setText(""+ readFile.listOfLines.size());
+        name.setText("");
+
+        /*
         try {
             final String javaBin = System.getProperty("java.home") + File.separator + "bin" + File.separator + "java";
             final File currentJar = new File(app.class.getProtectionDomain().getCodeSource().getLocation().toURI());
@@ -116,6 +122,7 @@ public class app extends JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
+*/
     }
 
     private void readFileOpened() {
