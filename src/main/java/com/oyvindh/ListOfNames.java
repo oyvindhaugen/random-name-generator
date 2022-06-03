@@ -21,7 +21,4 @@ public class ListOfNames {
         }
         System.out.println("This is the complete list: " + names);
     }
-    void ListOfNamesFromTxt() {
-        new ReadFile().readFileToList();
-    }
 }

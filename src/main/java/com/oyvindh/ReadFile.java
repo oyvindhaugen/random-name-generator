@@ -9,7 +9,7 @@ public class ReadFile {
     void readFileToList() {
         try {
             listOfLines.clear();
-            File f = new File("Test.txt");
+            File f = new File("Klasse.txt");
             BufferedReader br = new BufferedReader(new FileReader(f));
             String line = br.readLine();
             while (line != null) {
