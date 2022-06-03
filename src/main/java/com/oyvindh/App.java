@@ -6,6 +6,8 @@ import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.ImageIcon;
@@ -37,6 +39,7 @@ public class App extends JFrame {
   private static ReadFile readFile;
   private static boolean isPicked;
   ArrayList<String> listOfLinesOpened = new ArrayList();
+  ArrayList<String> randomListOrder = new ArrayList<>();
   File selectedFile = new File("");
 
   public static final App myApplication = new App();
@@ -119,10 +122,12 @@ public class App extends JFrame {
     Random r = new Random();
     if (readFile.listOfLines.size() < 1) {
       JOptionPane.showMessageDialog(null, "Listen er tom");
+      writeFile();
     } else {
       int randomItem = r.nextInt(readFile.listOfLines.size());
       String randomElement = readFile.listOfLines.get(randomItem);
       name.setText(randomElement);
+      randomListOrder.add(randomElement);
       readFile.listOfLines.remove(randomItem);
 
     }
@@ -187,12 +192,25 @@ public class App extends JFrame {
     Random r = new Random();
     if (listOfLinesOpened.size() < 1) {
       JOptionPane.showMessageDialog(null, "Listen er tom");
+      writeFile();
     } else {
       int randomItem = r.nextInt(listOfLinesOpened.size());
       String randomElement = listOfLinesOpened.get(randomItem);
       name.setText(randomElement);
+      randomListOrder.add(randomElement);
       listOfLinesOpened.remove(randomItem);
 
+    }
+  }
+  void writeFile() {
+    try {
+      FileWriter myWriter = new FileWriter("FerdigListe.txt");
+      myWriter.write(String.valueOf(randomListOrder));
+      myWriter.close();
+      System.out.println("Successfully wrote to the file.");
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
     }
   }
 }

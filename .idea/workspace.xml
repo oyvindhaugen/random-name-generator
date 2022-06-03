@@ -9,14 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="uhhhh">
-      <change afterPath="$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/random_name_generator_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/random_name_generator_jar.xml" afterDir="false" />
+    <list default="true" id="506a743f-2a2e-41e7-9d01-3918f64c906d" name="Changes" comment="Finished, GUI is ugly, but can't do anything 'bout it">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/FerdigListe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/WriteFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oyvindh/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oyvindh/ListOfNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/ListOfNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oyvindh/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oyvindh/ReadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654159231089</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finished, GUI is ugly, but can't do anything 'bout it">
+      <created>1654246580358</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654246580358</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +226,8 @@
     <MESSAGE value="moved txt file so it works&#10;&#10;if txt file and .jar file is in same dir it will work" />
     <MESSAGE value="pp" />
     <MESSAGE value="can now choose file, but file isn't remembered" />
-    <option name="LAST_COMMIT_MESSAGE" value="can now choose file, but file isn't remembered" />
+    <MESSAGE value="Finished, GUI is ugly, but can't do anything 'bout it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished, GUI is ugly, but can't do anything 'bout it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
